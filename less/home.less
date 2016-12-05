@@ -1,0 +1,58 @@
+.topic-desc{
+	color: @white;
+	margin-left: 116px;
+	h2{
+		font-family: @Merriweather;
+		font-size: @Large;
+    	text-transform: capitalize;
+    	margin: 0;
+    	line-height: 100px;
+    	max-width: 893px;
+
+	}
+	.button{
+		padding-top: 10px;
+		a {
+			border: 2px solid #fff;
+		    padding: 10px;
+		    text-transform: uppercase;
+		    color: #fff;
+		    text-decoration: none;
+		    font-size: 1em;
+		    font-family: @Lato;
+		    &:hover{
+		    	background: @red;
+		    	cursor: pointer;
+		    }
+		}
+	} 
+	
+	p{
+		max-width: 703px;
+	}
+	@media @tablet{
+		padding: 0 5%;
+		margin:0;
+		h2{
+			font-size: @tabletLarge;
+		}
+	}
+	@media @mobile{
+		padding: 0 7%;
+		margin:0;
+		
+		h2{
+			line-height: 37px;
+			font-size: @mobileLarge;
+		}
+		p{
+			line-height: 20px;
+		}
+	}
+}
+.overlay{
+	    width: 100vw;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+}
